@@ -9,8 +9,9 @@ class Integer
   end
 end
 
-require 'sinatra'
-require 'json'
+require "bundler/setup"
+require "sinatra"
+require "json"
 
 get '/:number' do
   content_type :json
